@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>FastAPI Demo</title>
+</head>
+
+<body>
+    <h1>Simple filtering</h1>
+
+
+    <form action="/" method="POST">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Minimum Tip</span>
+            </div>
+            <input value={{mintip}} name="mintip" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <span class="badge badge-pill badge-light">Showing rows with tip greater than {{mintip}}</span>
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+
+
+    <p>{{df|safe}}</p>
+
+
+
+
+
+</body>
+
+</html>
